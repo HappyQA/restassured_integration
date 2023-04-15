@@ -17,6 +17,6 @@ public class SomeAPITest extends Configuration {
         TestDTO newTestObject = createTestObject();
         String creteTestObject = createObject(ENDPOINT, newTestObject);
         TestDTO getTestObject = getObject(ENDPOINT + creteTestObject, TestDTO.class);
-        assertEqualsBudgetStructure(newTestObject, getTestObject);
+        assertEqualsObject(newTestObject, getTestObject);
     }
 }
