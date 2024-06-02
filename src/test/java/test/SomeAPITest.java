@@ -2,7 +2,6 @@ package test.api;
 
 @Tag("Test-API")
 @Epic("API section / API CRUD")
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SomeAPITest extends Configuration {
 
     @Test
