@@ -1,8 +1,5 @@
 package test.dto;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 @Data
 @Builder
 @AllArgsConstructor

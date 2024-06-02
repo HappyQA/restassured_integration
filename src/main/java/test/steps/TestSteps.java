@@ -1,18 +1,11 @@
 package steps;
 
-import io.qameta.allure.Step;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import test.dto.TestDTO;
-
-import static org.junit.Assert.assertEquals;
-
 public class TestSteps extends Configuration {
 
     public static Logger logger = LogManager.getLogger(TestSteps.class);
 
     /**
-     * Create model: Steps
+     * Create model
      */
     @Step("Create test object")
     public static TestDTO createTestObject() {

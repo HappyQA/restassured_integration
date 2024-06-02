@@ -1,16 +1,9 @@
 package configuration;
 
-import org.aeonbits.owner.ConfigFactory;
-import org.apache.http.HttpStatus;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import static java.util.concurrent.TimeUnit.SECONDS;
-import static org.hamcrest.Matchers.lessThanOrEqualTo;
-
 public class Configuration {
 
     public static CredentialsFile cfg = ConfigFactory.create(CredentialsFile.class);
+
     public static Logger logger = LogManager.getLogger(Configuration.class);
 
     public static String getAccessTokenForUser(String user, String password) {
